@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./js/papaparse.min.js"></script>
+	<script src="./js/utils.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<script src="http://d3js.org/d3.v4.0.0-alpha.23.min.js"></script>
+	<div class="page-header">
+		<h1>Contratos 2015</h1>
+	</div>
+	<center><div id="progress" style="width: 300px;" class="alert alert-danger" role="alert">Cargando ...</div>
+		<div id="complete" style="width: 300px;" class="alert alert-success" role="alert">Datos cargados!</div>
+	</center>
+	<div style="text-align:center;">
+		<div class="jumbotron" style="display:inline-block; width: 500px; margin: 10px;text-align:center; padding: 10px !important;">
+			<p style="font-size: 100px;">👨</p>
+			<h1>Hombres</h1>
+			<p id="hombres"></p>
+			<canvas id="canvas_hombres" width="500" height="500"></canvas>
+		</div>
+		<div class="jumbotron" style="display: inline-block; width: 500px; margin: 10px;text-align:center; padding: 10px !important;">
+			<p style="font-size: 100px;">🙋</p>
+			<h1>Mujeres</h1>
+			<p id="mujeres"></p>
+			<canvas id="canvas_mujeres" width="500" height="500"></canvas>
+		</div>
+	</div>
+	<script>
+		loading();
+	</script>
+
+</body>
+</html>
